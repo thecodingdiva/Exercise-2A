@@ -56,9 +56,33 @@ namespace Exercise_2A
 
             public double scoreAvg()
             {
+                char letterGrade;
                 double sum = Add();
                 double avg = sum/10;
+
+                if (avg >= 90)
+                {
+                    letterGrade = 'A';
+                }
+                else if (avg > 80)
+                {
+                    letterGrade = 'B';
+                }
+                else if (avg > 70)
+                {
+                    letterGrade = 'C';
+                }
+                else if (avg > 60)
+                {
+                    letterGrade = 'D';
+                }
+                else
+                {
+                    letterGrade = 'F';
+                }
+
                 Console.WriteLine("The average is: " + avg);
+                Console.WriteLine("The letter grade is: " + letterGrade);
                 return avg;
             }
     }
