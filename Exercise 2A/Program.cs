@@ -10,17 +10,24 @@ namespace Exercise_2A
     {
         static void Main(string[] args)
         {
+            SumScores sum = new SumScores();
+            Add.SumScores();
         }
         
         public class SumScores
         {
-            public void add(double y)
+            public void Add(double y)
             {
                 Console.WriteLine("Please enter a number between 0 - 100: ");
-                double x1 = double.Parse(Console.ReadLine();
+                double x1 = double.Parse(Console.ReadLine());
                 if (x1 < 0 || x1 > 100)
                 {
                     Console.WriteLine("Number must be between 0 - 100. Please enter number: ");
+                    double.Parse(Console.ReadLine());
+                }
+                else
+                {
+                    x1 = double.Parse(Console.ReadLine());
                 }
             }
         }
