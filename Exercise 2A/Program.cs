@@ -11,9 +11,9 @@ namespace Exercise_2A
         static void Main(string[] args)
         {
             SumScores sum = new SumScores();
-            sum.Add();
+            sum.scoreAvg();
         }
-        
+
         public class SumScores
         {
             public double Add()
@@ -53,7 +53,18 @@ namespace Exercise_2A
                 Console.WriteLine("The sum of your scores is: " + y);
                 return y;
             }
-        }
-        }
+
+            public double scoreAvg()
+            {
+                double sum = Add();
+                double avg = sum/10;
+                Console.WriteLine("The average is: " + avg);
+                return avg;
+            }
     }
+    }
+}
+
+
+    
 
