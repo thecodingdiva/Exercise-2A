@@ -11,12 +11,12 @@ namespace Exercise_2A
         static void Main(string[] args)
         {
             SumScores sum = new SumScores();
-            Add.SumScores();
+            sum.Add();
         }
         
         public class SumScores
         {
-            public void Add(double y)
+            public void Add()
             {
                 Console.WriteLine("Please enter a number between 0 - 100: ");
                 double x1 = double.Parse(Console.ReadLine());
