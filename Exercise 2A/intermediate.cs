@@ -16,18 +16,48 @@ namespace Exercise_2A
             double[] scores = new double[numOfScores];
 
             int i = 0;
-            do
+            while (i < scores.Length)
             {
                 Console.WriteLine("Please enter score: ");
                 scores[i] = Convert.ToInt32(Console.ReadLine());
                 i++;
             }
-            while (i < scores.Length);
-                
-
+                     
             double sumOfScores = scores.Sum();
+            double avg = sumOfScores / numOfScores;
             Console.WriteLine(sumOfScores);
-            return sumOfScores;
+            return avg;
+        }
+
+        public double IntermediateScoreAvg()
+        {
+            char letterGrade;
+            double avg = Add();
+
+            if (avg >= 90)
+            {
+                letterGrade = 'A';
+            }
+            else if (avg > 80)
+            {
+                letterGrade = 'B';
+            }
+            else if (avg > 70)
+            {
+                letterGrade = 'C';
+            }
+            else if (avg > 60)
+            {
+                letterGrade = 'D';
+            }
+            else
+            {
+                letterGrade = 'F';
+            }
+
+            Console.WriteLine("The average is: " + avg);
+            Console.WriteLine("The letter grade is: " + letterGrade);
+            return avg;
         }
     }
 }

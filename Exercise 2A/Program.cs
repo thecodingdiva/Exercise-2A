@@ -15,7 +15,7 @@ namespace Exercise_2A
             //sum.scoreAvg();
 
             Intermediate sum2 = new Intermediate();
-            sum2.Add();
+            sum2.IntermediateScoreAvg();
         }
 
         public class SumScores
