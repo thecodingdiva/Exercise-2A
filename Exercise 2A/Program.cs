@@ -11,8 +11,8 @@ namespace Exercise_2A
     {
         static void Main(string[] args)
         {
-            SumScores sum = new SumScores();
-            sum.scoreAvg();
+            //SumScores sum = new SumScores();
+            //sum.scoreAvg();
 
             Intermediate sum2 = new Intermediate();
             sum2.Add();

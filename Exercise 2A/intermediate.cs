@@ -15,11 +15,18 @@ namespace Exercise_2A
 
             double[] scores = new double[numOfScores];
 
+            int i = 0;
+            do
+            {
+                Console.WriteLine("Please enter score: ");
+                scores[i] = Convert.ToInt32(Console.ReadLine());
+                i++;
+            }
+            while (i < scores.Length);
+                
+
             double sumOfScores = scores.Sum();
-
-
-
-
+            Console.WriteLine(sumOfScores);
             return sumOfScores;
         }
     }
