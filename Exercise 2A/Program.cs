@@ -14,8 +14,11 @@ namespace Exercise_2A
             //SumScores sum = new SumScores();
             //sum.scoreAvg();
 
-            Intermediate sum2 = new Intermediate();
-            sum2.IntermediateScoreAvg();
+            //Intermediate sum2 = new Intermediate();
+            //sum2.IntermediateScoreAvg();
+
+            Advanced sum3 = new Advanced();
+            sum3.Add();
         }
 
         public class SumScores
