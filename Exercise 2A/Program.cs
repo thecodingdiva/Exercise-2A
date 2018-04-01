@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Exercise_2A
 {
     class Program
@@ -12,6 +13,9 @@ namespace Exercise_2A
         {
             SumScores sum = new SumScores();
             sum.scoreAvg();
+
+            Intermediate sum2 = new Intermediate();
+            sum2.Add();
         }
 
         public class SumScores
