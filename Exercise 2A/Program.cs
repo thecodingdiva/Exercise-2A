@@ -11,14 +11,16 @@ namespace Exercise_2A
     {
         static void Main(string[] args)
         {
+            ////Answer for Basic
             //SumScores sum = new SumScores();
             //sum.scoreAvg();
 
+            ////Answer for Intermediate
             //Intermediate sum2 = new Intermediate();
             //sum2.IntermediateScoreAvg();
 
+            //Answer for Advanced
             Advanced sum3 = new Advanced();
-            //sum3.Add();
             sum3.IntermediateScoreAvg();
         }
 
