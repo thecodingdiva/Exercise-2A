@@ -10,29 +10,20 @@ namespace Exercise_2A
     {
         public double Add()
         {
-            double[] scores = new double[0];
             int i = 0;
-            int arrayLen = 0;
-            Console.ReadLine();
+            int flag = 1;
+            double scores = 0;
 
-            if (Console.ReadLine() != "done")
-            {               
-                while (Console.ReadLine() != "done");
-                {
-                    Console.WriteLine("Please Enter Score or 'done': ");
-                    Console.ReadLine();
-                    scores[i] = Convert.ToInt32(Console.ReadLine());
-                    i++;
-                }
-            }
-            else
+            while (flag != -1)
             {
-                arrayLen = i;
-            }
+                Console.WriteLine("Please Enter Score or '-1': ");
+                flag = Convert.ToInt32(Console.ReadLine());
+                scores += Convert.ToInt32(flag);
+                i++;                
+            }         
 
-            double sumOfScores = scores.Sum();
-            double avg = sumOfScores / arrayLen;
-            Console.WriteLine(sumOfScores);
+            double avg = scores / (i-1);
+            Console.WriteLine(avg);
             return avg;
         }
 

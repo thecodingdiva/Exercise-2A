@@ -38,15 +38,15 @@ namespace Exercise_2A
             {
                 letterGrade = 'A';
             }
-            else if (avg > 80)
+            else if (avg >= 80)
             {
                 letterGrade = 'B';
             }
-            else if (avg > 70)
+            else if (avg >= 70)
             {
                 letterGrade = 'C';
             }
-            else if (avg > 60)
+            else if (avg >= 60)
             {
                 letterGrade = 'D';
             }

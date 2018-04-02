@@ -18,7 +18,8 @@ namespace Exercise_2A
             //sum2.IntermediateScoreAvg();
 
             Advanced sum3 = new Advanced();
-            sum3.Add();
+            //sum3.Add();
+            sum3.IntermediateScoreAvg();
         }
 
         public class SumScores
